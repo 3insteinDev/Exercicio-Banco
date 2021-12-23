@@ -1,0 +1,23 @@
+<p>Realizar Nova Transferência</p>
+
+<div class="container">
+  <div class="col">
+    <form>
+      <div class="mb-1">
+        <label class="form-label">Nome do Cliente</label>
+        <input type="text" [(ngModel)]="transferencia.nomeCliente" class="form-control" name="nomeCliente" placeholder="digite o nome do Cliente beneficiário">
+      </div>
+      <div class="mb-1">
+        <label class="form-label">Valor da Transferência</label>
+        <input  type="text" [(ngModel)]="transferencia.valor" class="form-control" name="valor" placeholder="digite o valor a ser transferido">
+      </div>
+      <div class="mb-1">
+        <label class="form-label">Número da Conta</label>
+        <input  type="text" [(ngModel)]="transferencia.contaCliente" class="form-control" name="contaCliente" placeholder="digite o numero da conta do beneficiário">
+      </div>
+      <div class="my-5">
+        <button (click)="adicionar()" class="btn btn-primary">Transferir</button>
+      </div>
+    </form>
+  </div>
+</div>
